@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | René Laplante</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body class="bg-gray-50 min-h-screen flex flex-col">
+    <header class="sticky top-0 z-50">
+      <nav class="bg-[#011257] border-b border-gray-500 px-6 py-4">
+        <ul class="flex gap-4 list-none m-0 p-0">
+          <li>
+            <a
+              href="index.html"
+              class="text-white no-underline hover:text-[#8495c5] transition-colors"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="projects.html"
+              class="text-white no-underline hover:text-[#8495c5] transition-colors"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="resume.html"
+              class="text-white no-underline hover:text-[#8495c5] transition-colors"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="text-white no-underline hover:text-[#8495c5] transition-colors"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="grow max-w-160 mx-auto w-full px-6 py-12">
+      <h1 class="text-[clamp(28px,3vw,36px)] font-bold text-[#011257] mb-2">
+        Contact Me
+      </h1>
+      <p class="text-base text-gray-600 mb-8">
+        Have a question or want to work together? Fill out the form below and
+        I'll get back to you as soon as possible.
+      </p>
+
+      <div class="bg-white border border-gray-200 rounded-lg p-8 shadow-md">
+        <form
+          action="https://formsubmit.co/lapinet51@gmail.com"
+          method="POST"
+          class="flex flex-col gap-5"
+        >
+          <div class="flex flex-col gap-1">
+            <label for="name" class="text-sm font-medium text-gray-700"
+              >Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your full name"
+              required
+              autofocus
+              class="px-4 py-2 bg-gray-50 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-[#2563eb]"
+            />
+          </div>
+          <div class="flex flex-col gap-1">
+            <label for="email" class="text-sm font-medium text-gray-700"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="your@email.com"
+              required
+              class="px-4 py-2 bg-gray-50 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-[#2563eb]"
+            />
+          </div>
+          <div class="flex flex-col gap-1">
+            <label for="message" class="text-sm font-medium text-gray-700"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              placeholder="How can I help you?"
+              required
+              rows="6"
+              class="px-4 py-2 bg-gray-50 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-[#2563eb] resize-none"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="self-start px-6 py-2 bg-[#2563eb] text-white rounded-md font-medium hover:bg-[#183992] transition-colors cursor-pointer"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="mt-auto text-center py-6 bg-[#011257]">
+      <p class="text-base text-gray-400">
+        Copyright © <span></span> René Laplante
+      </p>
+    </footer>
+  </body>
+  <script>
+    const year = new Date().getFullYear();
+    document.querySelector("footer span").textContent = year;
+  </script>
+</html>
