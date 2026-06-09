@@ -1,2 +1,8 @@
 /* Portfolio styles — imports only; edit partials in css/ */
 @import "tailwindcss";
+
+@layer base {
+  html {
+    font-size: 16px;
+  }
+}
