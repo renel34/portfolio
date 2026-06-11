@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <section className="bg-[url('assets/images/cobalt-textured-backgound.jpg')] bg-cover bg-center bg-no-repeat py-[clamp(64px,10vw,96px)] px-[clamp(16px,5vw,84px)]">
+    <section className="bg-[url('assets/images/cobalt-textured-background.jpg')] bg-cover bg-center bg-no-repeat py-[clamp(64px,10vw,96px)] px-[clamp(16px,5vw,84px)]">
       <div className="max-w-155">
         <h1 className="font-bold text-[clamp(48px,5vw,64px)] leading-tight mb-2 text-white">
           René Laplante
