@@ -1,39 +1,28 @@
-import htmlIcon from "../../assets/icons/html5-original.svg";
-import cssIcon from "../../assets/icons/css3-original.svg";
-import jsIcon from "../../assets/icons/javascript-original.svg";
-import reactIcon from "../../assets/icons/react-original.svg";
-import tailwindIcon from "../../assets/icons/tailwind-original.svg";
-import nodeIcon from "../../assets/icons/nodejs-original-wordmark.svg";
-import expressIcon from "../../assets/icons/express-original.svg";
-import pythonIcon from "../../assets/icons/python-original.svg";
-import postgresIcon from "../../assets/icons/postgresql-original.svg";
-import oauthIcon from "../../assets/icons/oauth-original.svg";
-
 const stack = [
   {
     category: "Front-End",
     items: [
-      { name: "HTML5", icon: htmlIcon },
-      { name: "CSS3", icon: cssIcon },
-      { name: "JavaScript", icon: jsIcon },
-      { name: "React", icon: reactIcon },
-      { name: "Tailwind V4", icon: tailwindIcon },
+      { name: "HTML5", icon: "/assets/icons/html5-original.svg" },
+      { name: "CSS3", icon: "/assets/icons/css3-original.svg" },
+      { name: "JavaScript", icon: "/assets/icons/javascript-original.svg" },
+      { name: "React", icon: "/assets/icons/react-original.svg" },
+      { name: "Tailwind V4", icon: "/assets/icons/tailwind-original.svg" },
     ],
   },
   {
     category: "Back-End",
     items: [
-      { name: "Node.js", icon: nodeIcon },
-      { name: "Express", icon: expressIcon },
-      { name: "Python", icon: pythonIcon },
+      { name: "Node.js", icon: "/assets/icons/nodejs-original-wordmark.svg" },
+      { name: "Express", icon: "/assets/icons/express-original.svg" },
+      { name: "Python", icon: "/assets/icons/python-original.svg" },
       { name: "REST APIs", icon: null },
     ],
   },
   {
     category: "Data & Auth",
     items: [
-      { name: "PostgreSQL", icon: postgresIcon },
-      { name: "OAuth", icon: oauthIcon },
+      { name: "PostgreSQL", icon: "/assets/icons/postgresql-original.svg" },
+      { name: "OAuth", icon: "/assets/icons/oauth-original.svg" },
       { name: "Authentication", icon: null },
       { name: "Encryption & Hashing", icon: null },
     ],
