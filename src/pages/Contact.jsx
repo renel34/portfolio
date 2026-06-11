@@ -3,6 +3,8 @@ import Navbar from "../components/Navbar.jsx";
 import Footer from "../components/Footer.jsx";
 
 function Contact() {
+  const redirectUrl = `${window.location.origin}/`;
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -11,11 +13,6 @@ function Contact() {
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    window.location.href = `https://formsubmit.co/e47fe8d77c684f21e1e78265ca919c2a`;
   };
 
   return (
@@ -73,11 +70,7 @@ function Contact() {
                 className="px-4 py-2 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-[#2563eb]"
               />
             </div>
-            <input
-              type="hidden"
-              name="_next"
-              value={import.meta.env.VITE_APP_URL}
-            />
+            <input type="hidden" name="_next" value={redirectUrl} />
             <div className="flex flex-col gap-1">
               <label
                 htmlFor="message"
